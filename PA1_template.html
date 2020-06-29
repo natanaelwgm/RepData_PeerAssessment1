@@ -224,7 +224,7 @@ df$date &lt;- as.Date(as.factor(df$date), format = &quot;%Y-%m-%d&quot;)
 str(df)</code></pre>
 <pre><code>## 'data.frame':    17568 obs. of  3 variables:
 ##  $ steps   : int  NA NA NA NA NA NA NA NA NA NA ...
-##  $ date    : Date, format: &quot;2012-10-01&quot; &quot;2012-10-01&quot; ...
+##  $ date    : Date, format: &quot;2012-10-01&quot; &quot;2012-10-01&quot; &quot;2012-10-01&quot; &quot;2012-10-01&quot; ...
 ##  $ interval: int  0 5 10 15 20 25 30 35 40 45 ...</code></pre>
 <pre class="r"><code>head(df)</code></pre>
 <pre><code>##   steps       date interval
@@ -255,10 +255,8 @@ head(df)</code></pre>
 <pre class="r"><code>df$day &lt;- day(df$date)
 table(df$day)</code></pre>
 <pre><code>## 
-##   1   2   3   4   5   6   7   8   9  10  11  12  13  14  15  16  17  18  19  20 
-## 576 576 576 576 576 576 576 576 576 576 576 576 576 576 576 576 576 576 576 576 
-##  21  22  23  24  25  26  27  28  29  30  31 
-## 576 576 576 576 576 576 576 576 576 576 288</code></pre>
+##   1   2   3   4   5   6   7   8   9  10  11  12  13  14  15  16  17  18  19  20  21  22  23  24  25  26  27  28  29  30  31 
+## 576 576 576 576 576 576 576 576 576 576 576 576 576 576 576 576 576 576 576 576 576 576 576 576 576 576 576 576 576 576 288</code></pre>
 <pre class="r"><code>#head(df)</code></pre>
 </div>
 <div id="what-is-the-mean-total-number-of-steps-taken-per-day" class="section level2">
